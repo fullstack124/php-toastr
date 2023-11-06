@@ -1,0 +1,27 @@
+{
+    "name": "hilalahmad/php-toastr",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": [
+        "toastr",
+        "phptoastr",
+        "phpalert",
+        "ci4alert"
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hilalahmad\\PhpToastr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fullstack124",
+            "email": "stackf63@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
