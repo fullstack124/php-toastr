@@ -50,7 +50,7 @@ To use this package for displaying toast notifications, simply include it in you
 use Hilalahmad\PhpToastr\Toastr;
 
 $toastr=new Toastr();
-return $toastr->success('Lorem ipsum dolor sit');
+$toastr->success('Lorem ipsum dolor sit');
 
 ```
 Or 
@@ -59,7 +59,7 @@ Or
 ```bash
 use Hilalahmad\PhpToastr\Toastr;
 
-return Toastr::success('Lorem ipsum dolor sit');
+Toastr::success('Lorem ipsum dolor sit');
 
 ```
 
@@ -69,149 +69,149 @@ return Toastr::success('Lorem ipsum dolor sit');
 You can display toast notifications in various styles, including:
 
 
-Success
+### Success
 
 ```bash
-return $toastr->success('Lorem ipsum dolor sit','topLeft');
-return $toastr->success('Lorem ipsum dolor sit','topRight');
-return $toastr->success('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->success('Lorem ipsum dolor sit','bottomRight');
-return $toastr->success('Lorem ipsum dolor sit','topCenter');
-return $toastr->success('Lorem ipsum dolor sit','bottomCenter');
+$toastr->success('Lorem ipsum dolor sit','topLeft');
+$toastr->success('Lorem ipsum dolor sit','topRight');
+$toastr->success('Lorem ipsum dolor sit','bottomLeft');
+$toastr->success('Lorem ipsum dolor sit','bottomRight');
+$toastr->success('Lorem ipsum dolor sit','topCenter');
+$toastr->success('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 Or 
 
 
 ```bash
-return Toastr::success('Lorem ipsum dolor sit','topLeft');
-return Toastr::success('Lorem ipsum dolor sit','topRight');
-return Toastr::success('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::success('Lorem ipsum dolor sit','bottomRight');
-return Toastr::success('Lorem ipsum dolor sit','topCenter');
-return Toastr::success('Lorem ipsum dolor sit','bottomCenter');
+Toastr::success('Lorem ipsum dolor sit','topLeft');
+Toastr::success('Lorem ipsum dolor sit','topRight');
+Toastr::success('Lorem ipsum dolor sit','bottomLeft');
+Toastr::success('Lorem ipsum dolor sit','bottomRight');
+Toastr::success('Lorem ipsum dolor sit','topCenter');
+Toastr::success('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 
-Danger
+### Danger
 
 ```bash
-return $toastr->danger('Lorem ipsum dolor sit','topLeft');
-return $toastr->danger('Lorem ipsum dolor sit','topRight');
-return $toastr->danger('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->danger('Lorem ipsum dolor sit','bottomRight');
-return $toastr->danger('Lorem ipsum dolor sit','topCenter');
-return $toastr->danger('Lorem ipsum dolor sit','bottomCenter');
-
-```
-Or 
-
-
-```bash
-return Toastr::danger('Lorem ipsum dolor sit','topLeft');
-return Toastr::danger('Lorem ipsum dolor sit','topRight');
-return Toastr::danger('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::danger('Lorem ipsum dolor sit','bottomRight');
-return Toastr::danger('Lorem ipsum dolor sit','topCenter');
-return Toastr::danger('Lorem ipsum dolor sit','bottomCenter');
-
-```
-
-Dark
-
-```bash
-return $toastr->dark('Lorem ipsum dolor sit','topLeft');
-return $toastr->dark('Lorem ipsum dolor sit','topRight');
-return $toastr->dark('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->dark('Lorem ipsum dolor sit','bottomRight');
-return $toastr->dark('Lorem ipsum dolor sit','topCenter');
-return $toastr->dark('Lorem ipsum dolor sit','bottomCenter');
+$toastr->danger('Lorem ipsum dolor sit','topLeft');
+$toastr->danger('Lorem ipsum dolor sit','topRight');
+$toastr->danger('Lorem ipsum dolor sit','bottomLeft');
+$toastr->danger('Lorem ipsum dolor sit','bottomRight');
+$toastr->danger('Lorem ipsum dolor sit','topCenter');
+$toastr->danger('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 Or 
 
 
 ```bash
-return Toastr::dark('Lorem ipsum dolor sit','topLeft');
-return Toastr::dark('Lorem ipsum dolor sit','topRight');
-return Toastr::dark('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::dark('Lorem ipsum dolor sit','bottomRight');
-return Toastr::dark('Lorem ipsum dolor sit','topCenter');
-return Toastr::dark('Lorem ipsum dolor sit','bottomCenter');
+Toastr::danger('Lorem ipsum dolor sit','topLeft');
+Toastr::danger('Lorem ipsum dolor sit','topRight');
+Toastr::danger('Lorem ipsum dolor sit','bottomLeft');
+Toastr::danger('Lorem ipsum dolor sit','bottomRight');
+Toastr::danger('Lorem ipsum dolor sit','topCenter');
+Toastr::danger('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 
-
-Warning
-
-```bash
-return $toastr->warning('Lorem ipsum dolor sit','topLeft');
-return $toastr->warning('Lorem ipsum dolor sit','topRight');
-return $toastr->warning('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->warning('Lorem ipsum dolor sit','bottomRight');
-return $toastr->warning('Lorem ipsum dolor sit','topCenter');
-return $toastr->warning('Lorem ipsum dolor sit','bottomCenter');
-
-```
-Or 
-
+### Dark
 
 ```bash
-return Toastr::warning('Lorem ipsum dolor sit','topLeft');
-return Toastr::warning('Lorem ipsum dolor sit','topRight');
-return Toastr::warning('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::warning('Lorem ipsum dolor sit','bottomRight');
-return Toastr::warning('Lorem ipsum dolor sit','topCenter');
-return Toastr::warning('Lorem ipsum dolor sit','bottomCenter');
-
-```
-
-Info
-
-```bash
-return $toastr->info('Lorem ipsum dolor sit','topLeft');
-return $toastr->info('Lorem ipsum dolor sit','topRight');
-return $toastr->info('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->info('Lorem ipsum dolor sit','bottomRight');
-return $toastr->info('Lorem ipsum dolor sit','topCenter');
-return $toastr->info('Lorem ipsum dolor sit','bottomCenter');
+$toastr->dark('Lorem ipsum dolor sit','topLeft');
+$toastr->dark('Lorem ipsum dolor sit','topRight');
+$toastr->dark('Lorem ipsum dolor sit','bottomLeft');
+$toastr->dark('Lorem ipsum dolor sit','bottomRight');
+$toastr->dark('Lorem ipsum dolor sit','topCenter');
+$toastr->dark('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 Or 
 
 
 ```bash
-return Toastr::info('Lorem ipsum dolor sit','topLeft');
-return Toastr::info('Lorem ipsum dolor sit','topRight');
-return Toastr::info('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::info('Lorem ipsum dolor sit','bottomRight');
-return Toastr::info('Lorem ipsum dolor sit','topCenter');
-return Toastr::info('Lorem ipsum dolor sit','bottomCenter');
+Toastr::dark('Lorem ipsum dolor sit','topLeft');
+Toastr::dark('Lorem ipsum dolor sit','topRight');
+Toastr::dark('Lorem ipsum dolor sit','bottomLeft');
+Toastr::dark('Lorem ipsum dolor sit','bottomRight');
+Toastr::dark('Lorem ipsum dolor sit','topCenter');
+Toastr::dark('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 
 
-Pink
+### Warning
 
 ```bash
-return $toastr->pink('Lorem ipsum dolor sit','topLeft');
-return $toastr->pink('Lorem ipsum dolor sit','topRight');
-return $toastr->pink('Lorem ipsum dolor sit','bottomLeft');
-return $toastr->pink('Lorem ipsum dolor sit','bottomRight');
-return $toastr->pink('Lorem ipsum dolor sit','topCenter');
-return $toastr->pink('Lorem ipsum dolor sit','bottomCenter');
+$toastr->warning('Lorem ipsum dolor sit','topLeft');
+$toastr->warning('Lorem ipsum dolor sit','topRight');
+$toastr->warning('Lorem ipsum dolor sit','bottomLeft');
+$toastr->warning('Lorem ipsum dolor sit','bottomRight');
+$toastr->warning('Lorem ipsum dolor sit','topCenter');
+$toastr->warning('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 Or 
 
 
 ```bash
-return Toastr::pink('Lorem ipsum dolor sit','topLeft');
-return Toastr::pink('Lorem ipsum dolor sit','topRight');
-return Toastr::pink('Lorem ipsum dolor sit','bottomLeft');
-return Toastr::pink('Lorem ipsum dolor sit','bottomRight');
-return Toastr::pink('Lorem ipsum dolor sit','topCenter');
-return Toastr::pink('Lorem ipsum dolor sit','bottomCenter');
+Toastr::warning('Lorem ipsum dolor sit','topLeft');
+Toastr::warning('Lorem ipsum dolor sit','topRight');
+Toastr::warning('Lorem ipsum dolor sit','bottomLeft');
+Toastr::warning('Lorem ipsum dolor sit','bottomRight');
+Toastr::warning('Lorem ipsum dolor sit','topCenter');
+Toastr::warning('Lorem ipsum dolor sit','bottomCenter');
+
+```
+
+### Info
+
+```bash
+$toastr->info('Lorem ipsum dolor sit','topLeft');
+$toastr->info('Lorem ipsum dolor sit','topRight');
+$toastr->info('Lorem ipsum dolor sit','bottomLeft');
+$toastr->info('Lorem ipsum dolor sit','bottomRight');
+$toastr->info('Lorem ipsum dolor sit','topCenter');
+$toastr->info('Lorem ipsum dolor sit','bottomCenter');
+
+```
+Or 
+
+
+```bash
+Toastr::info('Lorem ipsum dolor sit','topLeft');
+Toastr::info('Lorem ipsum dolor sit','topRight');
+Toastr::info('Lorem ipsum dolor sit','bottomLeft');
+Toastr::info('Lorem ipsum dolor sit','bottomRight');
+Toastr::info('Lorem ipsum dolor sit','topCenter');
+Toastr::info('Lorem ipsum dolor sit','bottomCenter');
+
+```
+
+
+### Pink
+
+```bash
+$toastr->pink('Lorem ipsum dolor sit','topLeft');
+$toastr->pink('Lorem ipsum dolor sit','topRight');
+$toastr->pink('Lorem ipsum dolor sit','bottomLeft');
+$toastr->pink('Lorem ipsum dolor sit','bottomRight');
+$toastr->pink('Lorem ipsum dolor sit','topCenter');
+$toastr->pink('Lorem ipsum dolor sit','bottomCenter');
+
+```
+Or 
+
+
+```bash
+Toastr::pink('Lorem ipsum dolor sit','topLeft');
+Toastr::pink('Lorem ipsum dolor sit','topRight');
+Toastr::pink('Lorem ipsum dolor sit','bottomLeft');
+Toastr::pink('Lorem ipsum dolor sit','bottomRight');
+Toastr::pink('Lorem ipsum dolor sit','topCenter');
+Toastr::pink('Lorem ipsum dolor sit','bottomCenter');
 
 ```
 

@@ -2,16 +2,44 @@
 
 namespace Hilalahmad\PhpToastr;
 
-define('CSS_PATH', 'src/css/');
-define('JS_PATH', 'src/js/');
+
 class Toastr
 {
 
     protected static function toastAlert($message, $color1, $color2, $position = array())
     {
+        $js = " 
+        function updateProgressBar() {
+            const progressBar = document.querySelectorAll('#progress-bar');
+            let progress = 100;
+            progressBar.forEach(pb => {
+                const parentElement = pb.parentElement.parentElement.parentElement.parentNode.parentNode;
+                const interval = setInterval(function () {
+                    pb.style.width = progress + '%';
+                    progress -= 1;
+                    if (progress < 0) {
+                        clearInterval(interval);
+                        parentElement.style.display = 'none'; // Hide the parent element
+                    }
+                }, 60);
+            });
+           
+        }
+        
+        
+        document.querySelectorAll('.close-btn').forEach(cb => {
+            cb.addEventListener('click',function(){
+                const parentElement = cb.parentElement.parentElement.parentElement.parentNode.parentNode;
+                parentElement.style.display = 'none';
+            })
+        });
+        
+        // Call the function to update the progress bar when the alert is shown
+        document.getElementById('alert').style.display = 'block'; // Show the alert
+        updateProgressBar();";
         $classString = implode('', $position);
-        return "
-            <link rel='stylesheet' type='text/css' href='" . CSS_PATH . "style.css'>
+        $html = "";
+        $html .= "
             <div class='alert' id='alert'>
                 <div class='{$classString}'>
                     <div class='md:w-[300px] w-full'>
@@ -37,8 +65,10 @@ class Toastr
                     </div>
                 </div>
             </div>
-            <script src='" . JS_PATH . "script.js'></script>
+            <script src='https://cdn.tailwindcss.com'></script>
+            <script>{$js}</script>
         ";
+        return $html;
     }
 
     protected static function showCondition($message, $color1, $color2, $position)
@@ -63,7 +93,7 @@ class Toastr
         }
     }
 
-    public static function dark($message, $position='topRight')
+    public static function dark($message, $position = 'topRight')
     {
         $color1 = 'bg-gray-800';
         $color2 = 'bg-gray-700';
@@ -71,34 +101,34 @@ class Toastr
         echo self::showCondition($message, $color1, $color2, $position);
     }
 
-    public static function danger($message, $position='topRight')
+    public static function danger($message, $position = 'topRight')
     {
         $color1 = 'bg-red-500';
         $color2 = 'bg-red-600';
         echo self::showCondition($message, $color1, $color2, $position);
     }
 
-    public static function success($message, $position='topRight')
+    public static function success($message, $position = 'topRight')
     {
         $color1 = 'bg-green-500';
         $color2 = 'bg-green-600';
         echo self::showCondition($message, $color1, $color2, $position);
     }
 
-    public static function info($message, $position='topRight')
+    public static function info($message, $position = 'topRight')
     {
         $color1 = 'bg-blue-500';
         $color2 = 'bg-blue-600';
         echo self::showCondition($message, $color1, $color2, $position);
     }
 
-    public static function warning($message, $position='topRight')
+    public static function warning($message, $position = 'topRight')
     {
         $color1 = 'bg-yellow-500';
         $color2 = 'bg-yellow-600';
         echo self::showCondition($message, $color1, $color2, $position);
     }
-    public static function pink($message, $position='topRight')
+    public static function pink($message, $position = 'topRight')
     {
         $color1 = 'bg-pink-500';
         $color2 = 'bg-pink-600';
