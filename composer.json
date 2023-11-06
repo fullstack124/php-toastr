@@ -1,5 +1,6 @@
 {
     "name": "hilalahmad/php-toastr",
+    "description": "The PHP Toastr package is a user-friendly and lightweight PHP library designed to create simple and stylish notification messages in web applications. It offers a convenient way to display various types of notifications, such as success messages, error alerts, information pop-ups, and more, in a visually appealing manner to enhance the user experience.",
     "type": "library",
     "version": "1.0.0",
     "keywords": [
